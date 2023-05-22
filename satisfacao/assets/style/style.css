@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+
+:root {
+    --background-color: #D3D3D3;
+    --text-color: #1E3A8A;
+    --fonte-principal: 'Inter', sans-serif;
+    --animation-color: #1E3A8A;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--background-color);  
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+    min-height: 100vh;
+}
+
+.container_principal {}
+
+.container_logo {
+    text-align: center;
+}
+
+.container_logo_imagem {
+    width: 50%;
+    height: 50%;
+    padding-bottom: 3%;
+}
+
+.container_titulo {
+    text-align: center;
+    padding-bottom: 1%;
+    color: var(--text-color);
+}
+
+.container_subtitulo {
+    text-align: center;
+    padding-bottom: 1%;
+}
+
+.container_texto {
+    text-align: center;
+    padding-bottom: 5%;
+}
+
+.container_secundario {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+
+}
+
+.container_satisfacao_positiva {
+    position: relative;
+    display: inline-block;
+    margin-right: 20%;
+    width: 300px;
+    height: 400px;
+    overflow: hidden;
+}
+
+
+.container_satisfacao_positiva span:first-of-type {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(to right, transparent, var(--animation-color));
+    animation: animar1 2s linear infinite;
+}
+
+@keyframes animar1 {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+.container_satisfacao_positiva span:nth-of-type(2) {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 3px;
+    height: 100%;
+    background: linear-gradient(to bottom, transparent, var(--animation-color));
+    animation: animar2 2s linear infinite;
+    animation-delay: 1s;
+}
+
+@keyframes animar2 {
+    0% {
+        transform: translateY(-100%);
+    }
+
+    100% {
+        transform: translateY(100%);
+    }
+}
+
+.container_satisfacao_positiva span:nth-of-type(3) {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(to left, transparent, var(--animation-color));
+    animation: animar3 2s linear infinite;
+}
+
+@keyframes animar3 {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.container_satisfacao_positiva span:last-of-type {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 3px;
+    height: 100%;
+    background: linear-gradient(to top, transparent, var(--animation-color));
+    animation: animar4 2s linear infinite;
+    animation-delay: 1s;
+}
+
+@keyframes animar4 {
+    0% {
+        transform: translateY(100%);
+    }
+
+    100% {
+        transform: translateY(-100%);
+    }
+}
+
+.container_satisfacao_negativa {
+    position: relative;
+    display: inline-block;
+    width: 300px;
+    height: 400px;
+    overflow: hidden;
+}
+
+.container_satisfacao_negativa span:first-of-type {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(to right, transparent, var(--animation-color));
+    animation: animar1 2s linear infinite;
+}
+
+.container_satisfacao_negativa span:nth-of-type(2) {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 3px;
+    height: 100%;
+    background: linear-gradient(to bottom, transparent, var(--animation-color));
+    animation: animar2 2s linear infinite;
+    animation-delay: 1s;
+}
+
+.container_satisfacao_negativa span:nth-of-type(3) {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(to left, transparent, var(--animation-color));
+    animation: animar3 2s linear infinite;
+}
+
+.container_satisfacao_negativa span:last-of-type {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 3px;
+    height: 100%;
+    background: linear-gradient(to top, transparent, var(--animation-color));
+    animation: animar4 2s linear infinite;
+    animation-delay: 1s;
+}
+
+svg {
+    width: 200px;
+    height: 200px;
+}
+
+.container_satisfeito_texto {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    font-weight: bold;
+    font-size: 36px;
+}
+
+.container_insatisfeito_texto {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    font-weight: bold;
+    font-size: 36px;
+}
+
